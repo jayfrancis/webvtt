@@ -15,10 +15,15 @@ class Caption
     ->setText($text);
   }
 
+  /**
+   * Returns the output
+   *
+   * @return string
+   */
   public function render()
   {
     $startTime = gmdate("i:s.000", $this->getStartSecond());
-    $endTime = gmdate("i:s.000", $this->getEndSecond());
+    $endTime   = gmdate("i:s.000", $this->getEndSecond());
 
     $caption = sprintf(
       '%s --> %s%s%s%s',
@@ -44,6 +49,9 @@ class Caption
     return $this;
   }
 
+  /**
+   * @return int
+   */
   public function getStartSecond()
   {
     return $this->_startSecond;
@@ -61,6 +69,9 @@ class Caption
     return $this;
   }
 
+  /**
+   * @return int
+   */
   public function getEndSecond()
   {
     return $this->_endSecond;

@@ -21,7 +21,12 @@ class WebVTT
     return $this->_captions;
   }
 
-  public function renderCaptions()
+  /**
+   * Render the output
+   *
+   * @return string
+   */
+  public function render()
   {
     $captions = ['WEBVTT'];
 
@@ -31,6 +36,7 @@ class WebVTT
     }
 
     header("Content-Type:text/vtt;charset=utf-8");
-    echo implode(PHP_EOL, $captions);
+
+    return implode(PHP_EOL, $captions);
   }
 }
