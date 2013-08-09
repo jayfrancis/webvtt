@@ -1,0 +1,19 @@
+{
+  "name":              "jayfrancis/webvtt",
+  "description":       "WebVTT Render Helper",
+  "version":           "1.0.0",
+  "keywords":          ["webvtt", "subtitles", "video"],
+  "homepage":          "http://whistlingmedia.com",
+  "license":           "BSD-3-Clause",
+  "authors":           [
+    {
+      "name":     "Jay Francis",
+      "email":    "jay@whistlingmedia.com",
+      "homepage": "http://whistlingmedia.com"
+    }
+  ],
+  "require":           {
+    "php":            ">=5.2.0"
+  },
+  "minimum-stability": "dev"
+}
