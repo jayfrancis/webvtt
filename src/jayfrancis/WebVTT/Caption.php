@@ -1,5 +1,5 @@
 <?php
-namespace WebVTT;
+namespace JayFrancis\WebVTT;
 
 class Caption
 {
